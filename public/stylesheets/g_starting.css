@@ -1,0 +1,87 @@
+body{
+    font-family: 'Ubuntu Mono', monospace;
+
+}
+
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    z-index: 100000;
+    background-color: #010a43;
+    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+header .logo
+{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    margin-left: 5%;
+}
+
+header .logo:hover
+{
+    font-size: 2.1rem;
+    color: #ff9d9d;
+}
+
+header ul
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: right;
+    list-style-type: none;
+    color: #fff;
+    margin-right: 5%;
+}
+header ul li a
+{
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+    color: #fff;
+	letter-spacing: 3px;
+    font-weight: 6rem;
+    font-size: 1.2rem;
+}
+
+header ul li a:hover
+{
+    font-size: 1.25rem;
+    color: #ff9d9d;
+}
+
+.card{
+    border: 2px solid black;
+    font-size: 1.3rem;
+    margin-top: 2%;
+    box-shadow: 5px 10px #888888;
+    background-color: #f1d4d4;
+}
+
+#mycard{
+   padding: 5%;
+    text-align: center;
+}
+
+.inputbox{
+    padding: 2%;
+    text-align: left;
+}
+
+label{
+    width:100%;
+}

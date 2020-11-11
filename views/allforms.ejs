@@ -1,0 +1,29 @@
+<%- include ("partials/header") %>
+
+<div class="container">
+    <h1>Click on any form to view it...</h1>
+    <div class="row">
+        <% forms.forEach(function(report) { %>
+            <div class="col-lg-4">
+       
+            <div class="card">
+                <span >
+                Name : <%= report.name %> </span><br>
+                <span>
+                Rollno :<%= report.rollno %> </span><br>
+                <span >
+                Deptno. :<%= report.dept %> </span>
+                <form action="/myform/<%= report.id %>" method="post">
+                    <button class="btn btn-lg btn-danger" id=<%= report.id %>>View it</button>
+                </form>
+                
+            </div>
+            
+        </div>
+        <% }) %>
+
+    </div>
+    
+</div>
+
+<%- include ("partials/footer") %>
